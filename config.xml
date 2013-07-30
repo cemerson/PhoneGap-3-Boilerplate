@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.situational.pg3boilerplate" version="2013072501" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PG3 Boilerplate</name>
+    <description>
+        Bare bones PhoneGap/Cordova 3.0 project with standard plugins built-in/ready to go.
+    </description>
+    <author email="cemerson@perform-impact.com" href="http://www.perform-impact.com">
+        Chris Emerson
+    </author>
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+</widget>

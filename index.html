@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/tests.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>PhoneGap 3.0 Boilerplate</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>PhoneGap 3.0 Boilerplate</h1>
+            <div id="deviceready" class="blink info">
+                <label>Device Status:</label><p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <div id="plugin_tests">
+                <div id='info'>
+                    <h4>/cordova-plugin-device.git</h4>
+                    <div class="info" id="device_platform"><label>device.platform:</label><span></span></div>
+                    <div class="info" id="device_model"><label>device.model:</label><span></span></div>
+                    <div class="info" id="device_os"><label>device.os:</label><span></span></div>
+                    <div class="info" id="device_version"><label>device.version:</label><span></span></div>
+                    
+                    <h4>/cordova-plugin-network-information.git</h4>
+                    <div class="info" id="device_conn"><label>Connection:</label><span></span></div>
+                    <div class="info" id="device_internet"><label>Internet?:</label><span></span></div>
+                </div>
+                <div id='tests'>
+                    <h4>/cordova-plugin-splashscreen.git</h4>
+                    <input type='button' onclick="test_SplashScreen()" value='SplashScreen'/>
+                    <h4>/cordova-plugin-inappbrowser.git</h4>
+                    <input type='button' onclick="test_InAppBrowser_NoOptions()" value='View URL (Fullscreen)'/>
+                    <input type="button" onclick="test_PDFBrowser()" value='View PDF (Fullscreen)'/>
+                    <input type='button' onclick="test_InAppBrowser_WithOptions()" value='View URL (Windowed)'/>
+                    <input type="button" onclick="test_PDFBrowser_Form()" value='View PDF (Formsheet)'/>
+                    
+                    
+                    <h4>cemerson/cordova-securedeviceidentifier.git</h4>
+                    <input type="button"
+                    onclick="test_SDID()"
+                    value='Get SSID'/>
+                    <label id='device_id' class='test_label'>???</label>
+                    <h4>cemerson/cordova-powermanagement.git</h4>
+                    <input type="button"
+                    onclick="test_PowerManagement()"
+                    value='Toggle AutoLock'/>
+                    <label id='powermgmt_status' class='test_label'>???</label>
+                    
+                    <h4>cemerson/cordova-badge.git</h4>
+                    <input type="button"
+                    onclick="test_Badge()"
+                    value='Toggle Icon Badge'/>
+                    
+                    
+                    
+                </div>
+                <br clear='all'/>
+            </div>
+            <br clear='all'/>
+        </div>
+        <br clear='all'/>
+        
+        <script type="text/javascript" src="js/global.js"></script>
+        <script type="text/javascript" src="js/tests.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            </script>
+    </body>
+</html>

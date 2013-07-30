@@ -1,0 +1,67 @@
+
+input[type=button]{
+    padding:8px 10px;
+    border-radius:8px;
+    font-size:1em;
+    font-weight:bold;
+    color:#444;
+    margin-top:10px;
+}
+*{
+    font-family:sans-serif;
+}
+.info label{
+    color:#666;
+    width:100px;
+    display:block;
+    float:left;
+    white-space:nowrap;    
+    font-size:.75em;
+    margin:2px 0px;
+    clear:left;
+}
+#deviceready p,
+.info span{
+    font-weight:bold;
+}
+
+h4{
+	width:100%;
+    background-color: #60696D;
+    color:#A8FFF8;
+    padding:4px 0px;
+    text-indent:10px;
+    margin:20px 0 0px 0;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+.test_label{
+    border:1px solid #60696D;
+    border-radius:8px;
+    padding:4px 8px;
+    display:block;
+    text-align:center;
+}
+.event.received{
+    display:none;
+}
+
+
+body.inappbrowser_windowed_mode h1{
+    font-size:1.5em;
+}
+body.inappbrowser_windowed_mode{
+    width:198px;
+    border-right:10px solid #000;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.app div.info, .app input[type=button]{
+    margin-left:5px;
+}
+
