@@ -13,7 +13,7 @@ See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) h
 
 
 ###Official Plugins 
-(plugins I didn't have to alter myself)
+(plugins I didn't have to alter myself - all came directly from latest git repos maintained by the Cordova team)
 - **Device** [reference](http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
 - **Console** 
 - **Network-Information** [reference](http://docs.phonegap.com/en/3.0.0/cordova_connection_connection.md.html#Connection)
@@ -21,7 +21,7 @@ See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) h
 - **Notification** [reference](http://docs.phonegap.com/en/3.0.0/cordova_notification_notification.md.html#Notification)
 
 ###CE-Altered Plugins 
-(original authors may/may not update these eventually? but my copies are working in CDV3.0 today)
+(The original authors of these may/may not update these eventually - but my copies are working in CDV 3.0 today)
 - **Badge** [reference](https://github.com/cemerson/cordova-badge)
 - **PowerManagement** [reference](https://github.com/cemerson/cordova-powermanagement)
 - **SecureDeviceIdentifier** [reference](https://github.com/cemerson/cordova-securedeviceidentifier)
