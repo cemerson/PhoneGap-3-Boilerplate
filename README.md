@@ -6,6 +6,12 @@ Here's my humble stab at setting up and maintaining a bare bones PhoneGap 3.x pr
 
 This will likely be a WIP for a while - but the main thing in the initial version I wanted to get finished/released asap was getting the main plugins I normally use working with CDV 3.0 and in a 'ready-to-use' form. At the time I'm writing this up some of the plugins used are indeed CDV 3.0 compatible - but others are not (including important ones like how I need to view URLs and PDFs). Long story short is that this project contains a bare bones CDV 3.0 app project root folder structure that includes the following plugins and some test methods ([js/tests.js](https://github.com/cemerson/PhoneGap-3-Boilerplate/blob/master/js/tests.js)):
 
+#Video:
+See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) here:
+
+[![ScreenShot](https://secure-b.vimeocdn.com/ts/444/874/444874862_295.jpg)](https://vimeo.com/71345312)
+
+
 ###Official Plugins 
 (plugins I didn't have to alter myself)
 - **Device** [reference](http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
@@ -35,15 +41,17 @@ I also threw in the ability to provide a button background color as a parameter 
 
 To grab a copy of the PhoneGap 3 Boilerplate (on OSX) jump to Terminal and change to whatever directory you want to place your project and type the following ("MyFolder" being what the local destination folder should be named): 
 
-- **git clone https://github.com/cemerson/PhoneGap-3-Boilerplate.git MyFolder**
+    git clone https://github.com/cemerson/PhoneGap-3-Boilerplate.git MyFolder
+
 
 Next step to add an iOS project type the following:
-- **cd MyFolder**
-- **cordova platform add ios**
-- **cordova prepare**
+
+    cd MyFolder
+    cordova platform add ios
+    cordova prepare
 
 From that point on, modify and test the files in the MyFolder/www folder and when you want to refresh the iOS build return to the Terminal (in "MyFolder" folder) and type:
 
-- **cordova build**
+    cordova build
 
 This will push your MyFolder/www changes down to the iOS build and actually test the Xcode build via command line.
