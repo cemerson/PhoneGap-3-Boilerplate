@@ -4,24 +4,22 @@ PhoneGap-3-Boilerplate
 #Overview
 Here's my humble stab at setting up and maintaining a bare bones PhoneGap 3.x project structure with the plugins* I normally use (*official plugins and others I've modified myself). 
 
-This will likely be a WIP for a while - but the main thing in the initial version I wanted to get finished/released asap was getting the main plugins we normally use at PICLS working with CDV 3.0 and in a 'ready-to-use' form. At the time I'm writing this up some of the plugins used are indeed CDV 3.0 compatible - but others are not (including important ones like how I need to view URLs and PDFs).
-
-Long story short is that this project contains a bare bones CDV 3.0 app project root folder structure that includes the following plugins and some test methods (js/tests.js):
+This will likely be a WIP for a while - but the main thing in the initial version I wanted to get finished/released asap was getting the main plugins I normally use working with CDV 3.0 and in a 'ready-to-use' form. At the time I'm writing this up some of the plugins used are indeed CDV 3.0 compatible - but others are not (including important ones like how I need to view URLs and PDFs). Long story short is that this project contains a bare bones CDV 3.0 app project root folder structure that includes the following plugins and some test methods ([js/tests.js](https://github.com/cemerson/PhoneGap-3-Boilerplate/blob/master/js/tests.js)):
 
 ###Official Plugins 
 (plugins I didn't have to alter myself)
-- **Device** (http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
-- **Console** (no ref link - but I'm pretty sure this version allows on-device debugging now btw!)
-- **Network-Information** (http://docs.phonegap.com/en/3.0.0/cordova_connection_connection.md.html#Connection)
-- **SplashScreen** (http://docs.phonegap.com/en/3.0.0/cordova_splashscreen_splashscreen.md.html#Splashscreen)
-- **Notification** (http://docs.phonegap.com/en/3.0.0/cordova_notification_notification.md.html#Notification)
+- **Device** [reference](http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
+- **Console** 
+- **Network-Information** [reference](http://docs.phonegap.com/en/3.0.0/cordova_connection_connection.md.html#Connection)
+- **SplashScreen** [reference](http://docs.phonegap.com/en/3.0.0/cordova_splashscreen_splashscreen.md.html#Splashscreen)
+- **Notification** [reference](http://docs.phonegap.com/en/3.0.0/cordova_notification_notification.md.html#Notification)
 
 ###CE-Altered Plugins 
 (original authors may/may not update these eventually? but my copies are working in CDV3.0 today)
-- **Badge** (https://github.com/cemerson/cordova-badge)
-- **PowerManagement** (https://github.com/cemerson/cordova-powermanagement)
-- **SecureDeviceIdentifier** (https://github.com/cemerson/cordova-securedeviceidentifier)
-- **InAppBrowser** (https://github.com/cemerson/cordova-inappbrowser-ce)
+- **Badge** [reference](https://github.com/cemerson/cordova-badge)
+- **PowerManagement** [reference](https://github.com/cemerson/cordova-powermanagement)
+- **SecureDeviceIdentifier** [reference](https://github.com/cemerson/cordova-securedeviceidentifier)
+- **InAppBrowser** [reference](https://github.com/cemerson/cordova-inappbrowser-ce)
 
 
 #Plugin Notes
