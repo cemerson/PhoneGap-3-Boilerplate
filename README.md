@@ -41,7 +41,7 @@ I also threw in the ability to provide a button background color as a parameter 
 
 **Please Note that setting up a new PhoneGap 3 Boilerplate folder per the below Terminal commands will nuke any files you have there already - so it's best to start with a new directory and move any existing files you need in after setting everything up.**
 
-Make sure cordova 3 is installed first (instructions here).
+Make sure cordova 3 is installed first ([instructions here](http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface)).
 
 To grab a copy of the PhoneGap 3 Boilerplate (on OSX) jump to Terminal and change to whatever directory you want to place your project and type the following ("MyFolder" being what the local destination folder should be named): 
 
