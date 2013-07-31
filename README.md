@@ -39,19 +39,27 @@ I also threw in the ability to provide a button background color as a parameter 
 
 #Usage
 
+**Please Note that setting up a new PhoneGap 3 Boilerplate folder per the below Terminal commands will nuke any files you have there already - so it's best to start with a new directory and move any existing files you need in after setting everything up.**
+
+Make sure cordova 3 is installed first (instructions here).
+
 To grab a copy of the PhoneGap 3 Boilerplate (on OSX) jump to Terminal and change to whatever directory you want to place your project and type the following ("MyFolder" being what the local destination folder should be named): 
 
-    git clone https://github.com/cemerson/PhoneGap-3-Boilerplate.git MyFolder
+    cordova create PG3BP
+    cd PG3BP
+    git clone https://github.com/cemerson/PhoneGap-3-Boilerplate.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
 
+To take a look at things now you can type the following to confirm the PhoneGap 3 Boilerplate plugins are indeed there and that no platforms are setup yet for the project:
+
+    cordova plugins ls
+    cordova platforms ls
 
 Next step to add an iOS project type the following:
 
-    cd MyFolder
     cordova platform add ios
-    cordova prepare
 
-From that point on, modify and test the files in the MyFolder/www folder and when you want to refresh the iOS build return to the Terminal (in "MyFolder" folder) and type:
+At this point a Xcode project has been setup so you can test/build that when ready. From this point on, modify and test the files in the PG3BP/www folder and when you want to refresh the iOS build return to the Terminal (in "PG3BP" folder) and type:
 
     cordova build
 
-This will push your MyFolder/www changes down to the iOS build and actually test the Xcode build via command line.
+This will push your PG3BP/www changes down to the iOS build and actually test the Xcode build via command line.
