@@ -99,6 +99,32 @@ function test_PDFBrowser_Form(){
 }
 
 
+
+/* ----------------------------------------------------------- /
+ test_PDF_Windowed
+ / ----------------------------------------------------------- */
+function test_PDF_Windowed(){
+    report('TEST','--> test_PDF_Windowed()..');
+    try{
+        
+        if(!cordovaIsLoaded){
+            doAlert('Please Note: The [InAppBrowser] plugin\'s dimension and position parameters only work on an actual device.','Plugin Note');
+        }
+        
+        var windowHeight, windowWidth;
+        windowHeight = window.innerHeight;
+        windowWidth = window.innerWidth-150;
+        
+        var iab = window.open('pdf/example.pdf','_blank','vw=' + windowWidth + ',vh=' + windowHeight + ',vx=150,vy=0,buttoncolorbg=#BA8C3C,closebuttoncaption=Close');
+        iab.addEventListener('loadstart', function(){ $('body').addClass('inappbrowser_windowed_mode'); });
+        iab.addEventListener('exit', function(){ $('body').removeClass('inappbrowser_windowed_mode'); });
+        
+    }catch(e){ catchError('test_PDF_Windowed()',e); }
+}
+
+
+
+
 function test_SDID(){
     report('TEST','--> test_SDID()..');
     try{
