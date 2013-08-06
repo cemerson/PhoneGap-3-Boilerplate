@@ -15,10 +15,6 @@ See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) h
 ###Official Plugins 
 Note: All plugins are now submodules that point to their original (current) repositories.
 
-At any given time run the following in Terminal from the project root to update the plugins from their origin repos:
-
-    sudo git submodule foreach git pull origin master
-
 #####Plugins I didn't have to alter myself - all came directly from latest git repos maintained by the Cordova team)
 - **Device** [reference](http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
 - **Console** 
@@ -52,9 +48,7 @@ To grab a copy of the PhoneGap 3 Boilerplate (on OSX) jump to Terminal and chang
     cordova create PG3BP
     cd PG3BP
     git clone --recursive https://github.com/cemerson/PhoneGap-3-Boilerplate.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
-    git submodule update --init
-    (Optional / When you want to do fresh pull of submodules) git submodule foreach git pull origin master
-
+    
 To take a look at things now you can type the following to confirm the PhoneGap 3 Boilerplate plugins are indeed there and that no platforms are setup yet for the project:
 
     cordova plugins ls
@@ -69,3 +63,9 @@ At this point a Xcode project has been setup so you can test/build that when rea
     cordova build
 
 This will push your PG3BP/www changes down to the iOS build and actually test the Xcode build via command line.
+
+When you want to do fresh pull of main repo or submodules) 
+
+    git pull origin master
+    git submodule update --init
+    git submodule foreach git pull origin master 
