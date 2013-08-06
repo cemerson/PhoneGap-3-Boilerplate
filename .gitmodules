@@ -1,3 +1,30 @@
 [submodule "plugins/org.apache.cordova.plugins.inappbrowserce"]
 	path = plugins/org.apache.cordova.plugins.inappbrowserce
 	url = https://github.com/cemerson/cordova-inappbrowser-ce.git
+[submodule "plugins/org.apache.cordova.plugins.badge"]
+	path = plugins/org.apache.cordova.plugins.badge
+	url = https://github.com/cemerson/cordova-badge.git
+[submodule "plugins/org.apache.cordova.plugins.powermanagement"]
+	path = plugins/org.apache.cordova.plugins.powermanagement
+	url = https://github.com/cemerson/cordova-powermanagement.git
+[submodule "plugins/org.apache.cordova.plugins.securedeviceidentifier"]
+	path = plugins/org.apache.cordova.plugins.securedeviceidentifier
+	url = https://github.com/cemerson/cordova-securedeviceidentifier.git
+[submodule "plugins/org.apache.cordova.core.network-information"]
+	path = plugins/org.apache.cordova.core.network-information
+	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-network-information.git
+[submodule "plugins/org.apache.cordova.core.dialogs"]
+	path = plugins/org.apache.cordova.core.dialogs
+	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git
+[submodule "plugins/org.apache.cordova.core.battery-status"]
+	path = plugins/org.apache.cordova.core.battery-status
+	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-battery-status.git
+[submodule "plugins/org.apache.cordova.core.device"]
+	path = plugins/org.apache.cordova.core.device
+	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
+[submodule "plugins/org.apache.cordova.core.splashscreen"]
+	path = plugins/org.apache.cordova.core.splashscreen
+	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git
+[submodule "plugins/org.apache.cordova.core.console"]
+	path = plugins/org.apache.cordova.core.console
+	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git
