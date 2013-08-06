@@ -1,0 +1,3 @@
+[submodule "plugins/org.apache.cordova.plugins.inappbrowserce"]
+	path = plugins/org.apache.cordova.plugins.inappbrowserce
+	url = https://github.com/cemerson/cordova-inappbrowser-ce.git
