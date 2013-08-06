@@ -1,4 +1,0 @@
-cordova-powermanagement
-=======================
-
-...
