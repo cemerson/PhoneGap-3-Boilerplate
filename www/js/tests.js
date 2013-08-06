@@ -50,7 +50,7 @@ function test_InAppBrowser_WithOptions(){
         }
         
         var windowHeight, windowWidth;
-        windowHeight = window.innerHeight;
+        windowHeight = window.innerHeight - 20; // 20 is subtracted since statusbar is visible;
         windowWidth = window.innerWidth-200;
         
         var iab = window.open('http://www.ign.com','_blank','vw=' + windowWidth + ',vh=' + windowHeight + ',vx=200,vy=0,buttoncolorbg=#BA8C3C,closebuttoncaption=Close');
@@ -83,7 +83,7 @@ function test_PDFBrowser(){
         var windowHeight, windowWidth, viewX, viewY;
         viewX = 224;
         viewY = 24;
-        windowHeight = window.innerHeight;
+        windowHeight = window.innerHeight - 20; // 20 is subtracted since statusbar is visible;
         windowWidth = 800;        
 
         pdfView = window.open('pdf/example.pdf','_blank',
@@ -130,7 +130,7 @@ function test_PDFBrowser_Percent(){
         var windowHeight, windowWidth, viewX, viewY;
         viewX = (window.innerWidth*.15)/2;;
         viewY = 0;
-        windowHeight = window.innerHeight;
+        windowHeight = window.innerHeight - 20; // 20 is subtracted since statusbar is visible;
         windowWidth = window.innerWidth*.85;
         
         pdfView = window.open('pdf/example.pdf','_blank',
@@ -155,7 +155,7 @@ function test_PDFBrowser_Vertical(){
         var windowHeight, windowWidth, viewX, viewY;
         viewX = 0;
         viewY = (window.innerHeight*.35)/2;                    
-        windowHeight = window.innerHeight*.65;        
+        windowHeight = (window.innerHeight*.65) - 20; // 20 is subtracted since statusbar is visible;
         windowWidth = window.innerWidth*.85;
         
         pdfView = window.open('pdf/example.pdf','_blank',
