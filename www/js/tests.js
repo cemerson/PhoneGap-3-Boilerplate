@@ -86,7 +86,7 @@ function test_PDFBrowser(){
         windowHeight = window.innerHeight;
         windowWidth = 800;        
 
-        pdfView = window.open(strPDFURL,'_blank',
+        pdfView = window.open('pdf/example.pdf','_blank',
                               'enableviewportscale=yes,' +
                               'location=no,' +
                               'vw=' + windowWidth + ',' +
@@ -133,7 +133,7 @@ function test_PDFBrowser_Percent(){
         windowHeight = window.innerHeight;
         windowWidth = window.innerWidth*.85;
         
-        pdfView = window.open(strPDFURL,'_blank',
+        pdfView = window.open('pdf/example.pdf','_blank',
                               'enableviewportscale=yes,' +
                               'location=no,' +
                               'vw=' + windowWidth + ',' +
@@ -158,7 +158,7 @@ function test_PDFBrowser_Vertical(){
         windowHeight = window.innerHeight*.65;        
         windowWidth = window.innerWidth*.85;
         
-        pdfView = window.open(strPDFURL,'_blank',
+        pdfView = window.open('pdf/example.pdf','_blank',
                               'enableviewportscale=yes,' +
                               'location=no,' +
                               'vw=' + windowWidth + ',' +
