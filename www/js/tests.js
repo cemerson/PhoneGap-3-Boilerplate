@@ -78,11 +78,31 @@ function test_InAppBrowser_NoOptions(){
 function test_PDFBrowser(){
     report('TEST','--> test_PDFBrowser()..');
     try{
-        //doAlert('PDF will now be opened via InAppBrowser [window.open]','cordova-inappbrowser');
-        window.open('pdf/example.pdf','_blank','EnableViewPortScale=yes'); //,presentationstyle=formsheet');
-        
+
+        var pdfView;
+        var windowHeight, windowWidth, viewX, viewY;
+        viewX = 224;
+        viewY = 24;
+        windowHeight = window.innerHeight;
+        windowWidth = 800;        
+
+        pdfView = window.open(strPDFURL,'_blank',
+                              'enableviewportscale=yes,' +
+                              'location=no,' +
+                              'vw=' + windowWidth + ',' +
+                              'vh=' + windowHeight + ',' +
+                              'vx=' + viewX + ',' +
+                              'vy=' + viewY);
+    
+        //pdfView.addEventListener('loadstart', function(){ setBodyPDFClass(); });
+        //pdfView.addEventListener('exit', function(){ pdfView.close(); clearBodyPDFClass(); });
+
+
     }catch(e){ catchError('test_PDFBrowser()',e); }
 }
+
+
+
 
 /* ----------------------------------------------------------- /
  test_PDFBrowser_Form
@@ -96,6 +116,57 @@ function test_PDFBrowser_Form(){
         window.open('pdf/example.pdf','_blank','enableviewportscale=yes,presentationstyle=formsheet');
         
     }catch(e){ catchError('test_PDFBrowser_Form()',e); }
+}
+
+
+/* ----------------------------------------------------------- /
+ test_PDFBrowser_Percent
+ / ----------------------------------------------------------- */
+function test_PDFBrowser_Percent(){
+    report('TEST','--> test_PDFBrowser_Percent()..');
+    try{
+
+        var pdfView;
+        var windowHeight, windowWidth, viewX, viewY;
+        viewX = (window.innerWidth*.15)/2;;
+        viewY = 0;
+        windowHeight = window.innerHeight;
+        windowWidth = window.innerWidth*.85;
+        
+        pdfView = window.open(strPDFURL,'_blank',
+                              'enableviewportscale=yes,' +
+                              'location=no,' +
+                              'vw=' + windowWidth + ',' +
+                              'vh=' + windowHeight + ',' +
+                              'vx=' + viewX + ',' +
+                              'vy=' + viewY);            
+
+    }catch(e){ catchError('test_PDFBrowser_Percent()',e); }
+}
+
+/* ----------------------------------------------------------- /
+ test_PDFBrowser_Vertical
+ / ----------------------------------------------------------- */
+function test_PDFBrowser_Vertical(){
+    report('TEST','--> test_PDFBrowser_Vertical()..');
+    try{
+
+        var pdfView;
+        var windowHeight, windowWidth, viewX, viewY;
+        viewX = 0;
+        viewY = (window.innerHeight*.35)/2;                    
+        windowHeight = window.innerHeight*.65;        
+        windowWidth = window.innerWidth*.85;
+        
+        pdfView = window.open(strPDFURL,'_blank',
+                              'enableviewportscale=yes,' +
+                              'location=no,' +
+                              'vw=' + windowWidth + ',' +
+                              'vh=' + windowHeight + ',' +
+                              'vx=' + viewX + ',' +
+                              'vy=' + viewY);            
+
+    }catch(e){ catchError('test_PDFBrowser_Vertical()',e); }
 }
 
 
