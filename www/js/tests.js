@@ -77,7 +77,7 @@ function test_InAppBrowser_NoOptions(){
     report('TEST','--> test_InAppBrowser_NoOptions()..');
     try{
         //doAlert('Website will now be opened via InAppBrowser [window.open]','cordova-inappbrowser');
-        window.open('http://www.ign.com','_blank');
+        window.open('http://www.ign.com','_blank','fullscreenbuttonenabled=no');
     }catch(e){ catchError('test_InAppBrowser_NoOptions()',e); }
 }
 
@@ -97,7 +97,7 @@ function test_PDFBrowser(){
         windowWidth = window.innerWidth;
 
         pdfView = window.open('pdf/example.pdf','_blank',
-                              'enableviewportscale=yes,' +
+                              'enableviewportscale=yes,fullscreenbuttonenabled=no,' +
                               'location=no,' +
                               'vw=' + windowWidth + ',' +
                               'vh=' + windowHeight + ',' +
