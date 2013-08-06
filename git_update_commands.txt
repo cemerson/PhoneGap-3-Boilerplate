@@ -1,0 +1,5 @@
+Run the following commands in Terminal to update the files and submodules automatically:
+
+$ sudo git pull origin master
+$ git submodule update --init
+$ git submodule foreach git pull origin master 
