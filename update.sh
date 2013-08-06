@@ -1,3 +1,4 @@
 #!/bin/bash
-sudo git pull origin master
-sudo git submodule foreach git pull origin master 
+echo run the following commands to update the files and submodules automatically:
+echo sudo git pull origin master
+echo git submodule foreach git pull origin master 
