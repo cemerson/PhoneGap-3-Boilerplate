@@ -13,22 +13,22 @@ See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) h
 
 
 ###Official Plugins 
-(plugins I didn't have to alter myself - all came directly from latest git repos maintained by the Cordova team)
+Note: All plugins are now submodules that point to their original (current) repositories.
+
+#####Plugins I didn't have to alter myself - all came directly from latest git repos maintained by the Cordova team)
 - **Device** [reference](http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
 - **Console** 
 - **Network-Information** [reference](http://docs.phonegap.com/en/3.0.0/cordova_connection_connection.md.html#Connection)
 - **SplashScreen** [reference](http://docs.phonegap.com/en/3.0.0/cordova_splashscreen_splashscreen.md.html#Splashscreen)
 - **Notification** [reference](http://docs.phonegap.com/en/3.0.0/cordova_notification_notification.md.html#Notification)
 
-###CE-Altered Plugins 
+#####Plugins I've Modified
 (The original authors of these may/may not update these eventually - but my copies are working in CDV 3.0 today)
 - **Badge** [reference](https://github.com/cemerson/cordova-badge)
 - **PowerManagement** [reference](https://github.com/cemerson/cordova-powermanagement)
 - **SecureDeviceIdentifier** [reference](https://github.com/cemerson/cordova-securedeviceidentifier)
 - **InAppBrowser** [reference](https://github.com/cemerson/cordova-inappbrowser-ce)
 
-
-#Plugin Notes
 
 All the plugins listed above work as normal so nothing really to explain outside the usage shown in the js/tests.js file. Adding/removing the latest version of each plugin requires using the Cordova CLI. The only thing that is worth mentioning here is a few things around the InAppBrowser plugin being used. 
 
