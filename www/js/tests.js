@@ -49,11 +49,21 @@ function test_InAppBrowser_WithOptions(){
             doAlert('Please Note: The [InAppBrowser] plugin\'s dimension and position parameters only work on an actual device.','Plugin Note');
         }
         
-        var windowHeight, windowWidth;
+        
+        var windowHeight, windowWidth, viewX, viewY;
+        var iab;
+        viewX = 200;
+        viewY = 0;
         windowHeight = window.innerHeight;
         windowWidth = window.innerWidth-200;
-        
-        var iab = window.open('http://www.ign.com','_blank','vw=' + windowWidth + ',vh=' + windowHeight + ',vx=200,vy=0,buttoncolorbg=#BA8C3C,closebuttoncaption=Close');
+    
+        iab = window.open('http://www.ign.com','_blank',
+                              'enableviewportscale=yes,' +
+                              'location=yes,' +
+                              'vw=' + windowWidth + ',' +
+                              'vh=' + windowHeight + ',' +
+                              'vx=' + viewX + ',' +
+                              'vy=' + viewY);
         iab.addEventListener('loadstart', function(){ $('body').addClass('inappbrowser_windowed_mode'); });
         iab.addEventListener('exit', function(){ $('body').removeClass('inappbrowser_windowed_mode'); });
         
@@ -81,10 +91,10 @@ function test_PDFBrowser(){
 
         var pdfView;
         var windowHeight, windowWidth, viewX, viewY;
-        viewX = 224;
+        viewX = 200;
         viewY = 24;
         windowHeight = window.innerHeight;
-        windowWidth = 800;        
+        windowWidth = window.innerWidth-200;
 
         pdfView = window.open('pdf/example.pdf','_blank',
                               'enableviewportscale=yes,' +
