@@ -15,6 +15,10 @@ See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) h
 ###Official Plugins 
 Note: All plugins are now submodules that point to their original (current) repositories.
 
+At any given time run the following in Terminal from the project root to update the plugins from their origin repos:
+
+    sudo git submodule foreach git pull origin master
+
 #####Plugins I didn't have to alter myself - all came directly from latest git repos maintained by the Cordova team)
 - **Device** [reference](http://docs.phonegap.com/en/3.0.0/cordova_device_device.md.html#Device)
 - **Console** 
