@@ -91,10 +91,10 @@ function test_PDFBrowser(){
 
         var pdfView;
         var windowHeight, windowWidth, viewX, viewY;
-        viewX = 200;
-        viewY = 24;
+        viewX = 0;
+        viewY = 0;
         windowHeight = window.innerHeight;
-        windowWidth = window.innerWidth-200;
+        windowWidth = window.innerWidth;
 
         pdfView = window.open('pdf/example.pdf','_blank',
                               'enableviewportscale=yes,' +
@@ -130,31 +130,6 @@ function test_PDFBrowser_Form(){
 
 
 /* ----------------------------------------------------------- /
- test_PDFBrowser_Percent
- / ----------------------------------------------------------- */
-function test_PDFBrowser_Percent(){
-    report('TEST','--> test_PDFBrowser_Percent()..');
-    try{
-
-        var pdfView;
-        var windowHeight, windowWidth, viewX, viewY;
-        viewX = (window.innerWidth*.15)/2;;
-        viewY = 0;
-        windowHeight = window.innerHeight;
-        windowWidth = window.innerWidth*.85;
-        
-        pdfView = window.open('pdf/example.pdf','_blank',
-                              'enableviewportscale=yes,' +
-                              'location=no,' +
-                              'vw=' + windowWidth + ',' +
-                              'vh=' + windowHeight + ',' +
-                              'vx=' + viewX + ',' +
-                              'vy=' + viewY);            
-
-    }catch(e){ catchError('test_PDFBrowser_Percent()',e); }
-}
-
-/* ----------------------------------------------------------- /
  test_PDFBrowser_Vertical
  / ----------------------------------------------------------- */
 function test_PDFBrowser_Vertical(){
@@ -166,7 +141,7 @@ function test_PDFBrowser_Vertical(){
         viewX = 0;
         viewY = (window.innerHeight*.35)/2;                    
         windowHeight = window.innerHeight*.65;        
-        windowWidth = window.innerWidth*.85;
+        windowWidth = window.innerWidth;
         
         pdfView = window.open('pdf/example.pdf','_blank',
                               'enableviewportscale=yes,' +
@@ -193,12 +168,20 @@ function test_PDF_Windowed(){
         }
         
         var windowHeight, windowWidth;
+        var viewX = window.innerWidth*.05;
+        var viewY = 0;
         windowHeight = window.innerHeight;
-        windowWidth = window.innerWidth-150;
+        windowWidth = window.innerWidth*.90;
         
-        var iab = window.open('pdf/example.pdf','_blank','vw=' + windowWidth + ',vh=' + windowHeight + ',vx=150,vy=0,buttoncolorbg=#BA8C3C,closebuttoncaption=Close');
-        iab.addEventListener('loadstart', function(){ $('body').addClass('inappbrowser_windowed_mode'); });
-        iab.addEventListener('exit', function(){ $('body').removeClass('inappbrowser_windowed_mode'); });
+        var pdfView = window.open('pdf/example.pdf','_blank',
+                              'enableviewportscale=yes,' +
+                              'location=no,' +
+                              'vw=' + windowWidth + ',' +
+                              'vh=' + windowHeight + ',' +
+                              'vx=' + viewX + ',' +
+                              'vy=' + viewY);     
+        pdfView.addEventListener('loadstart', function(){ $('body').addClass('inappbrowser_windowed_mode'); });
+        pdfView.addEventListener('exit', function(){ $('body').removeClass('inappbrowser_windowed_mode'); });
         
     }catch(e){ catchError('test_PDF_Windowed()',e); }
 }
