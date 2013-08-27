@@ -48,6 +48,8 @@ To grab a copy of the PhoneGap 3 Boilerplate (on OSX) jump to Terminal and chang
     cordova create PG3BP
     cd PG3BP
     git clone --recursive https://github.com/cemerson/PhoneGap-3-Boilerplate.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
+    git submodule update --init
+    git submodule foreach git pull origin master 
     
 To take a look at things now you can type the following to confirm the PhoneGap 3 Boilerplate plugins are indeed there and that no platforms are setup yet for the project:
 
