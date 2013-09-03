@@ -1,5 +1,5 @@
-[submodule "plugins/org.apache.cordova.plugins.inappbrowserce"]
-	path = plugins/org.apache.cordova.plugins.inappbrowserce
+[submodule "plugins/org.apache.cordova.plugins.inappbrowser"]
+	path = plugins/org.apache.cordova.plugins.inappbrowser
 	url = https://github.com/cemerson/cordova-inappbrowser-ce.git
 [submodule "plugins/org.apache.cordova.plugins.badge"]
 	path = plugins/org.apache.cordova.plugins.badge
