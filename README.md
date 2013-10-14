@@ -48,8 +48,6 @@ To grab a copy of the PhoneGap 3 Boilerplate (on OSX) jump to Terminal and chang
     cordova create PG3BP
     cd PG3BP
     git clone --recursive https://github.com/cemerson/PhoneGap-3-Boilerplate.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
-    git submodule update --init
-    git submodule foreach git pull origin master 
     
 To take a look at things now you can type the following to confirm the PhoneGap 3 Boilerplate plugins are indeed there and that no platforms are setup yet for the project:
 
@@ -66,14 +64,20 @@ At this point a Xcode project has been setup so you can test/build that when rea
 
 This will push your PG3BP/www changes down to the iOS build and actually test the Xcode build via command line.
 
-When you want to do fresh pull of main repo or submodules) 
+When you want to do fresh pull of main repo 
 
     git pull origin master
+
+### Submodule Stuff
+
+*Warning: Playing with submodule stuff assumes you are crazy as me and/or a super elite git user*
+
+I am no pro at git submodules - but I do find them useful/necessary for avoiding version control insanity and a general means of keeping things packaged neatly. For that reason I've made all plugins in this project submodules that can be updated if/when the developer wants to do so. 
+
+To update all submodules from their source run these commands from the parent folder at any time:
+
     git submodule update --init
     git submodule foreach git pull origin master 
-
-
-### Submodules
 
 If anyone has trouble w/the plugins - here's a (partial) list of plugin submodule commands I've run. If a plugin namespace or path changes, this list of commands might come in helpful. For example the Cordova team removed the word ".core" from the namespace of a handful of their plugins recently - so I had to use these commands to re-add these submodules to this project (fun!.. not).
 
