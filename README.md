@@ -71,3 +71,18 @@ When you want to do fresh pull of main repo or submodules)
     git pull origin master
     git submodule update --init
     git submodule foreach git pull origin master 
+
+
+### Submodules
+
+If anyone has trouble w/the plugins - here's a (partial) list of plugin submodule commands I've run. If a plugin namespace or path changes, this list of commands might come in helpful. For example the Cordova team removed the word ".core" from the namespace of a handful of their plugins recently - so I had to use these commands to re-add these submodules to this project (fun!.. not).
+
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git plugins/org.apache.cordova.device
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-network-information.git plugins/org.apache.cordova.network-information
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-battery-status.git plugins/org.apache.cordova.battery-status
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-media.git plugins/org.apache.cordova.media
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git plugins/org.apache.cordova.dialogs
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git plugins/org.apache.cordova.splashscreen
+    git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git plugins/org.apache.cordova.console
+    
+...
