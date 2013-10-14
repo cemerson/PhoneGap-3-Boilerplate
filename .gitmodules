@@ -10,21 +10,24 @@
 [submodule "plugins/org.apache.cordova.plugins.securedeviceidentifier"]
 	path = plugins/org.apache.cordova.plugins.securedeviceidentifier
 	url = https://github.com/cemerson/cordova-securedeviceidentifier.git
-[submodule "plugins/org.apache.cordova.core.network-information"]
-	path = plugins/org.apache.cordova.core.network-information
+[submodule "plugins/org.apache.cordova.network-information"]
+	path = plugins/org.apache.cordova.network-information
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-network-information.git
-[submodule "plugins/org.apache.cordova.core.dialogs"]
-	path = plugins/org.apache.cordova.core.dialogs
+[submodule "plugins/org.apache.cordova.dialogs"]
+	path = plugins/org.apache.cordova.dialogs
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git
-[submodule "plugins/org.apache.cordova.core.battery-status"]
-	path = plugins/org.apache.cordova.core.battery-status
+[submodule "plugins/org.apache.cordova.battery-status"]
+	path = plugins/org.apache.cordova.battery-status
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-battery-status.git
-[submodule "plugins/org.apache.cordova.core.device"]
-	path = plugins/org.apache.cordova.core.device
+[submodule "plugins/org.apache.cordova.device"]
+	path = plugins/org.apache.cordova.device
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
-[submodule "plugins/org.apache.cordova.core.splashscreen"]
-	path = plugins/org.apache.cordova.core.splashscreen
+[submodule "plugins/org.apache.cordova.splashscreen"]
+	path = plugins/org.apache.cordova.splashscreen
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git
-[submodule "plugins/org.apache.cordova.core.console"]
-	path = plugins/org.apache.cordova.core.console
+[submodule "plugins/org.apache.cordova.console"]
+	path = plugins/org.apache.cordova.console
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git
+[submodule "www/js/common"]
+	path = www/js/common
+	url = https://github.com/cemerson/common.git
