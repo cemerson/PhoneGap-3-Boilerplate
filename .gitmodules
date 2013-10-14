@@ -34,3 +34,6 @@
 [submodule "plugins/org.apache.cordova.device"]
 	path = plugins/org.apache.cordova.device
 	url = https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
+[submodule "artwork/app-icon-template-ce"]
+	path = artwork/app-icon-template-ce
+	url = https://github.com/cemerson/app-icon-template-ce.git
