@@ -17,7 +17,8 @@ This will likely be a WIP for a while - but the main thing in the initial versio
 #Video:
 See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) here:
 
-[![ScreenShot](https://secure-b.vimeocdn.com/ts/444/874/444874862_295.jpg)](https://vimeo.com/71345312)
+[![ScreenShot](https://raw.github.com/cemerson/PhoneGap-3-Boilerplate/master/artwork/PhoneGap-3-Boilerplate.png)
+
 
 
 ###Official Plugins
