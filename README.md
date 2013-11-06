@@ -4,14 +4,10 @@ PhoneGap-3-Boilerplate
 #Updates
 
 20131106:
-<<<<<<< HEAD
-- Added audio/video section using [Cordova-MediaPlayer](https://github.com/cemerson/cordova-mediaplayer-core)
-=======
+
 - Added audio/video section using my [cordova-mediaPlayer-core](https://github.com/cemerson/cordova-mediaplayer-core) files as a submodule.
 - Note: I've deleted my old Cordova-MediaPlayer repo. This will be the only project where my [cordova-mediaPlayer-core](https://github.com/cemerson/cordova-mediaplayer-core) files are integrated/demonstrated from now on.
->>>>>>> 1942b9ed2883809365d717d0e39d5cac948c3bf1
 - Added orange GIT links for each plugin/section
-
 
 #Overview
 Here's my humble stab at setting up and maintaining a bare bones PhoneGap 3.x project structure with the plugins* I normally use (*official plugins and others I've modified myself).
@@ -100,8 +96,3 @@ If anyone has trouble w/the plugins - here's a (partial) list of plugin submodul
     git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git plugins/org.apache.cordova.dialogs
     git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git plugins/org.apache.cordova.splashscreen
     git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git plugins/org.apache.cordova.console
-
-<<<<<<< HEAD
-...
-=======
->>>>>>> 1942b9ed2883809365d717d0e39d5cac948c3bf1
