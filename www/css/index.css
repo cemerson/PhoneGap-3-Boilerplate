@@ -23,3 +23,31 @@
     -webkit-appearance: none;
     -webkit-user-select: none !important;  
 }
+
+.app h1:first-child{
+    font-size:1.1em;
+    background-color:#000;
+    margin:0;
+    padding:10px 0px;
+    color:#555;
+    text-align:center;
+}
+
+h1,h4{
+    position:relative;
+}
+
+.gitlink{
+    position:absolute;
+    right:5px;
+    top:4px;
+    text-align:center;
+    text-indent:0;
+    background-color:orange;
+    color:#fff;
+    padding:3px 6px;
+    border-radius:6px;
+    font-size:.7em;   
+    border-bottom: 2px solid rgb(145, 70, 35);
+    cursor: pointer;
+}

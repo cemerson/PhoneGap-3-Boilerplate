@@ -6,69 +6,74 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/tests.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="js/cordova-mediaplayer/cordova-mediaplayer.css" />
         <title>PhoneGap 3.0 Boilerplate</title>
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap 3.0 Boilerplate</h1>
+            <h1>PhoneGap 3.0 Boilerplate<div class='gitlink' href='https://github.com/cemerson/PhoneGap-3-Boilerplate' target='_blank'>Git</div></h1>
             <div id="deviceready" class="blink info">
                 <label>Device Status:</label><p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
             <div id="plugin_tests">
                 <div id='info'>
-                    <h4>/cordova-plugin-device.git</h4>
+                    <h4>/cordova-plugin-device<div class='gitlink' href='https://github.com/apache/cordova-plugin-device' target='_blank'>Git</div></h4>
                     <div class="info" id="device_platform"><label>device.platform:</label><span></span></div>
                     <div class="info" id="device_model"><label>device.model:</label><span></span></div>
                     <div class="info" id="device_os"><label>device.os:</label><span></span></div>
                     <div class="info" id="device_version"><label>device.version:</label><span></span></div>
-                    
-                    <h4>/cordova-plugin-network-information.git</h4>
+
+                    <h4>/cordova-plugin-network-information<div class='gitlink' href='https://github.com/apache/cordova-plugin-network-information' target='_blank'>Git</div></h4>
                     <div class="info" id="device_conn"><label>Connection:</label><span></span></div>
                     <div class="info" id="device_internet"><label>Internet?:</label><span></span></div>
                 </div>
                 <div id='tests'>
-                    <h4>/cordova-plugin-splashscreen.git</h4>
+                    <h4>/cordova-mediaplayer-core<div class='gitlink' href='https://github.com/cemerson/cordova-mediaplayer-core' target='_blank'>Git</div></h4>
+                    <div id="cordova_mediaplayer"></div>
+                    <input type='button' onclick="test_VideoRemote()" value='Video:Remote'/>
+                    <input type='button' onclick="test_VideoLocal()" value='Video:Local'/>
+                    <input type='button' onclick="test_AudioRemote()" value='Audio:Remote'/>
+                    <input type='button' onclick="test_AudioLocal()" value='Audio:Local'/>
+                    <br/><input type='button' onclick="test_ResetCordovaMediaPlayer()" value='Reset Player'/>
+                    <hr/>
+                    <h4>/cordova-plugin-splashscreen<div class='gitlink' href='https://github.com/apache/cordova-plugin-splashscreen' target='_blank'>Git</div></h4>
                     <input type='button' onclick="test_SplashScreen()" value='SplashScreen'/>
-                    <h4>/cordova-plugin-inappbrowser.git</h4>
+                    <h4>cemerson/ cordova-plugin-inappbrowser<div class='gitlink' href='https://github.com/cemerson/cordova-inappbrowser-ce' target='_blank'>Git</div></h4>
                     <input type='button' onclick="test_InAppBrowser_NoOptions()" value='URL (Fullscreen)'/>
                     <input type="button" onclick="test_PDFBrowser()" value='PDF (Fullscreen)'/>
                     <input type='button' onclick="test_InAppBrowser_WithOptions()" value='URL (Split-View)'/>
                     <input type="button" onclick="test_PDF_Windowed()" value='PDF (Centered Window)'/>
-                    <input type="button" onclick="test_PDFBrowser_Vertical()" value='PDF (% Vertical Space)'/>                                    
-                    <input type="button" onclick="test_PDFBrowser_Form()" value='PDF (Formsheet)'/>                                                                                                
-                    
-                    <h4>cemerson/cordova-securedeviceidentifier.git</h4>
+                    <input type="button" onclick="test_PDFBrowser_Vertical()" value='PDF (% Vertical Space)'/>
+                    <input type="button" onclick="test_PDFBrowser_Form()" value='PDF (Formsheet)'/>
+
+                    <h4>cemerson/ cordova-securedeviceidentifier<div class='gitlink' href='https://github.com/cemerson/cordova-securedeviceidentifier' target='_blank'>Git</div></h4>
                     <input type="button"
                     onclick="test_SDID()"
                     value='Get SSID'/>
                     <label id='device_id' class='test_label'>???</label>
-                    <h4>cemerson/cordova-powermanagement.git</h4>
+                    <h4>cemerson/ cordova-powermanagement<div class='gitlink' href='https://github.com/cemerson/cordova-powermanagement' target='_blank'>Git</div></h4>
                     <input type="button"
                     onclick="test_PowerManagement()"
                     value='Toggle AutoLock'/>
                     <label id='powermgmt_status' class='test_label'>???</label>
-                    
-                    <h4>cemerson/cordova-badge.git</h4>
+
+                    <h4>cemerson/ cordova-badge<div class='gitlink' href='https://github.com/cemerson/cordova-badge' target='_blank'>Git</div></h4>
                     <input type="button"
                     onclick="test_Badge()"
                     value='Toggle Icon Badge'/>
-                    
-                    
-                    
                 </div>
                 <br clear='all'/>
             </div>
             <br clear='all'/>
         </div>
         <br clear='all'/>
-        
-        <script type="text/javascript" src="js/global.js"></script>
+
+        <script type="text/javascript" src="js/common/global.js"></script>
+        <script type="text/javascript" src="js/common/mobile.js"></script>
+        <script type="text/javascript" src="js/common/jquery.js"></script>
+        <script type="text/javascript" src="js/cordova-mediaplayer/cordova-mediaplayer.js"></script>
         <script type="text/javascript" src="js/tests.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-            </script>
     </body>
 </html>

@@ -37,3 +37,6 @@
 [submodule "artwork/app-icon-template-ce"]
 	path = artwork/app-icon-template-ce
 	url = https://github.com/cemerson/app-icon-template-ce.git
+[submodule "www/js/cordova-mediaplayer"]
+	path = www/js/cordova-mediaplayer
+	url = https://github.com/cemerson/cordova-mediaplayer-core.git

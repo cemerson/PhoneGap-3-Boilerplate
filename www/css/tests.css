@@ -8,17 +8,20 @@ input[type=button]{
     margin-top:10px;
 }
 *{
-    font-family:sans-serif;
+    font-family:sans-serif;	
+	text-align:center;
 }
+
 .info label{
-    color:#666;
-    width:100px;
-    display:block;
-    float:left;
+    color:#666;    
     white-space:nowrap;    
     font-size:.75em;
     margin:2px 0px;
-    clear:left;
+
+}
+.info label, .info span{
+	width:100px;
+	display:inline-block;
 }
 #deviceready p,
 .info span{
@@ -26,14 +29,18 @@ input[type=button]{
 }
 
 h4{
-	width:100%;
+	width: 98%;
     background-color: #60696D;
     color:#A8FFF8;
     padding:4px 0px;
     text-indent:10px;
     margin:20px 0 0px 0;
-    white-space:nowrap; 
+    
+	white-space: normal; 
     overflow:hidden;
+	text-align: left;
+	text-indent: 0;
+	padding-left: 2%;
 }
 
 .test_label{
@@ -64,4 +71,14 @@ body{
 .app div.info, .app input[type=button]{
     margin-left:5px;
 }
+.app div.info{
+	/*display:inline-block;*/
+}
 
+
+#cmp_header h1{
+	font-size: 1em;
+	text-align:center;
+	margin:0;
+	padding:3px 0px;
+}
