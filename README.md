@@ -10,16 +10,14 @@ PhoneGap-3-Boilerplate
 - Added orange GIT links for each plugin/section
 
 #Overview
+
 Here's my humble stab at setting up and maintaining a bare bones PhoneGap 3.x project structure with the plugins* I normally use (*official plugins and others I've modified myself).
 
 This will likely be a WIP for a while - but the main thing in the initial version I wanted to get finished/released asap was getting the main plugins I normally use working with CDV 3.0 and in a 'ready-to-use' form. At the time I'm writing this up some of the plugins used are indeed CDV 3.0 compatible - but others are not (including important ones like how I need to view URLs and PDFs). Long story short is that this project contains a bare bones CDV 3.0 app project root folder structure that includes the following plugins and some test methods ([js/tests.js](https://github.com/cemerson/PhoneGap-3-Boilerplate/blob/master/js/tests.js)):
 
-#Video:
-See a quick video run-through of the PhoneGap 3 Boilerplate (in iOS Simulator) here:
+#Screenshot
 
 [![ScreenShot](https://raw.github.com/cemerson/PhoneGap-3-Boilerplate/master/artwork/PhoneGap-3-Boilerplate.png)
-
-
 
 ###Official Plugins
 Note: All plugins are now submodules that point to their original (current) repositories.
@@ -97,3 +95,8 @@ If anyone has trouble w/the plugins - here's a (partial) list of plugin submodul
     git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git plugins/org.apache.cordova.dialogs
     git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git plugins/org.apache.cordova.splashscreen
     git submodule add https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git plugins/org.apache.cordova.console
+
+
+#Video:
+
+To be updated...
